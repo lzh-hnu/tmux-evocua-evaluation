@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tmux for EvoCUA: Empirical Evaluation Protocol</title>
+    <meta name="description" content="A discussion site for benchmarking EvoCUA behavior in long-lived tmux sessions.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <img class="hero-image" src="./assets/hero.png" width="700" height="500" alt="Research illustration for tmux for EvoCUA: Empirical Evaluation Protocol">
+
+    <header class="site-header">
+      <p class="kicker">tmux adaptation research</p>
+      <h1>tmux for EvoCUA: Empirical Evaluation Protocol</h1>
+      <p class="subtitle">A discussion site for benchmarking EvoCUA behavior in long-lived tmux sessions.</p>
+      <div class="meta-grid" aria-label="Project metadata">
+        <div class="meta-item"><span class="meta-label">Agent</span><span class="meta-value">EvoCUA</span></div>
+        <div class="meta-item"><span class="meta-label">Track</span><span class="meta-value">Evaluation Study</span></div>
+        <div class="meta-item"><span class="meta-label">Artifact</span><span class="meta-value">Static GitHub Pages discussion</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Abstract</h2>
+        <div>
+          <p>Evaluation should measure the full interaction trace, including focus decisions, pane reuse, interruption recovery, and the stability of intermediate artifacts.</p>
+          <p>This site frames the project as an academic discussion artifact: it states the adaptation problem, proposes a design stance, and lists evaluation lenses that can be expanded into experiments.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Research Question</h2>
+        <div class="callout">
+          <p>Which measurements reveal whether EvoCUA is using tmux as a durable workspace rather than a passive command transport?</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Adaptation Notes</h2>
+        <div>
+          <ul>
+            <li>Tasks are grouped by session length and required recovery depth.</li>
+            <li>Ablations remove pane memory, replay buffers, and focus metadata independently.</li>
+            <li>Metrics distinguish successful task completion from reproducible terminal conduct.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Evaluation Lens</h2>
+        <div>
+          <ul>
+            <li>Long-horizon task completion</li>
+            <li>Recovery latency after injected faults</li>
+            <li>Agreement between trace replay and final artifacts</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Open Discussion</h2>
+        <div>
+          <p>The central methodological risk is mistaking terminal completion for agent understanding. The project therefore treats tmux as both infrastructure and evidence: pane state, focus movement, command output, and recovery behavior all become part of the argument.</p>
+          <p>Future work can connect this static discussion to executable harnesses, trace viewers, and standardized task suites for cross-agent comparison.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Generated as a public research discussion site for EvoCUA and tmux adaptation.</p>
+    </footer>
+  </body>
+</html>
